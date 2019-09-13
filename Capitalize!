@@ -1,0 +1,4 @@
+Capitalize every word in input string
+This can be solved using split, join and capitalize.
+
+print ' '.join(word.capitalize() for word in raw_input().split(' '))
