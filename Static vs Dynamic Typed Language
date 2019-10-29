@@ -1,0 +1,38 @@
+## Typing ##
+“When types are checked”
+
+"3" + 5 will raise a type error in strongly typed languages, such as Python and Go, because they don't allow for "type coercion":
+the ability for a value to change type implicitly in certain contexts (e.g. merging two types using +).
+Weakly typed languages, such as JavaScript, won't throw a type error (result: '35').
+
+Static: Types checked before run-time
+Dynamic: Types checked on the fly, during execution
+
+Python Example -- Dynamic, Interpreted
+
+def foo(a):
+    if a > 0:
+        print 'Hi'
+    else:
+        print "3" + 5foo(2)
+Because Python is both interpreted and dynamically typed, it only translates and type-checks code it’s executing on.
+Dynamically typed languages don't check types until execution, and that line never executes.
+The else block never executes, so "3" + 5 is never even looked at!
+
+## Performance ##
+A compiled language will have better performance at run-time if it’s statically typed because the knowledge of types allows
+for machine code optimization.
+Statically typed languages have better performance at run-time intrinsically due to not needing to check types dynamically
+while executing (it checks before running).
+Similarly, compiled languages are faster at run time as the code has already been translated instead of needing to “interpret”/translate 
+it on the fly.
+Note that both compiled and statically typed languages will have a delay before running for translation and type-checking, respectively.
+
+More Differences
+Static typing catches errors early, instead of finding them during execution (especially useful for long programs).
+It’s more “strict” in that it won’t allow for type errors anywhere in your program and often prevents variables from changing types,
+which further defends against unintended errors.
+
+num = 2
+num = '3' // ERROR
+Dynamic typing is more flexible (which some appreciate) but allows for variables to change types (sometimes creating unexpected errors).
