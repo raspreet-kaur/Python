@@ -1,0 +1,13 @@
+A tuple is an immutable sequence of Python objects. Tuples are sequences, just like lists.
+The differences between tuples and lists are,
+the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
+
+
+
+### Here are naming conventions for Python identifiers −
+Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
+Starting an identifier with a single leading underscore indicates that the identifier is private.
+Starting an identifier with two leading underscores indicates a strongly private identifier.
+If the identifier also ends with two trailing underscores, the identifier is a language-defined special name
+
+Mangling ?
